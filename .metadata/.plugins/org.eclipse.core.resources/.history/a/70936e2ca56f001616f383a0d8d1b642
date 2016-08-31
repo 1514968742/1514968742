@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+
+/**
+ * @author APCS2
+ *
+ */
+public class calculate {
+	public static int square(int number){
+		return number;
+		
+	}
+}

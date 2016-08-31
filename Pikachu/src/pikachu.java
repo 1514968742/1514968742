@@ -3,6 +3,10 @@ public class pikachu {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		System.out.println("Pikachu welcomes you to the world of Pokémon!");
+		System.out.println("\t\t(\\__/)");
+		System.out.println("\t\t(o^.^)");
+		System.out.println("\tz(_(\")(\")");
 	}
 
 }
