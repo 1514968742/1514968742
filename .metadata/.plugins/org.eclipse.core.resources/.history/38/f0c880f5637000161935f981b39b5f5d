@@ -28,14 +28,6 @@ public class calculate {
 	public static double discriminant(double A, double B , double C){
 		return(B*B-4*A*C);
 	}
-	public static int toImproperFrac(int A,int B,int C){
-		A=3;
-		B=1;
-		C=2;
-		int top=A*C+B;
-		int bot=C;
-	}
-		
-	}
+	public static 
 	
 }
