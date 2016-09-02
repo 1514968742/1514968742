@@ -34,18 +34,8 @@ public class calculate {
 		C=2;
 		int top=A*C+B;
 		int bot=C;
-		return bot;
 	}
-	public static int toMixedNum(int numb1,int numb2){
-		String imProFra;
-		imProFra= (numb1)/2
+		
 	}
-	public static String foil(int a,int b,int c, int d){
-		String answer;
 	
-		answer=(a*b)+"x^2"+(a*d)+(b*c)+"x"+(c*d);
-		return answer;
-		
-	}
-		
-	}
+}
