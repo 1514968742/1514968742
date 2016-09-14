@@ -48,4 +48,61 @@ public class calculate {
 		
 	}
 		
+	public static boolean isDivisbleBy(int a, int b){
+		if(a%b==0){
+			return false;
+		}else{
+			return true;
+		}
+	}
+	public static double absValue(double a){
+		Math.abs(a);
+		return a;
+	}
+	public static int max(int a,int b){
+		if(a>b){
+			return a;
+		}else{
+			return b;
+		}
+	}
+	public static double max2(double a,double b,double c){
+		if (a > b && a > c){
+			return a;
+		}else if(b > a && b> c){
+			return b;
+		}else{
+			return c;
+		}
+	}
+	public static int min(int a,int b){
+		if (a<b){
+			return a;
+		}else{
+			return b;
+			
+		}
+	}
+	public static double round2(double a){
+		double b=(int)b*100+0.5;
+		double answer = b/100;
+		return answer;
+	}
+	public static double exponent(double a,int b){
+		int answer =1;
+		for(int i =1 ;i<= b;i++){
+			answer*=a; }
+			return answer;
+	}
+	public static int factorial(int a){
+		int answer =1;
+		for (int i=1; i<=a;i++){
+			answer*=a;
+			return answer;
+		}
+	}
+	public static int isprime(int a){
+		
+		for(in)
+
 	}
