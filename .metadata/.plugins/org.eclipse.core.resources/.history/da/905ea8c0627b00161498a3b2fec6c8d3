@@ -38,7 +38,7 @@ public class calculate {
 	}
 	public static int toMixedNum(int numb1,int numb2){
 		String imProFra;
-		(int)imProFra= ((numb1)/2);
+		imProFra= (numb1)/2
 	}
 	public static String foil(int a,int b,int c, int d){
 		String answer;
@@ -101,14 +101,8 @@ public class calculate {
 			return answer;
 		}
 	}
-	public static boolean isprime(int a){
-		for(int i=2;i<a;i++) {
-			if(a%i==0){
-				return false;
-			}else{
-				return true;
-		}
+	public static int isprime(int a){
+		
+		for(in)
+
 	}
-	public static
-
-
