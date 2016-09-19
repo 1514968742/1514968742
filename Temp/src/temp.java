@@ -1,5 +1,5 @@
 
-public class temp {
+public class temp{
 
 	public static void main(String[] args) {
 		double Fahrenheit=1333;

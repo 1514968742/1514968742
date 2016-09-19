@@ -6,7 +6,7 @@
  * @author APCS2
  *
  */
-public class calculate {
+public class Calculate {
 	public static int square(int number){
 		return (number*number);
 	}
@@ -20,25 +20,19 @@ public class calculate {
 		return((number1+number2+number3)/3);
 	}
 	public static double toDegrees(double number){
-		return((number*3.14159/180));
+		return((number*180)/3.14159);
 	}
 	public static double toRadians(double number){
-		return((number/3.14159*180));
+		return((number*3.14159)/180);
 	}
 	public static double discriminant(double A, double B , double C){
 		return(B*B-4*A*C);
 	}
-	public static int toImproperFrac(int A,int B,int C){
-		A=3;
-		B=1;
-		C=2;
-		int top=A*C+B;
-		int bot=C;
-		return bot;
+	public static String toImproperFrac(int whole,int denom,int num){
+		return((whole*denom+num)+" / "+denom);
 	}
-	public static int toMixedNum(int numb1,int numb2){
-		String imProFra;
-		(int)imProFra= ((numb1)/2);
+	public static String toMixedNum(int num,int denom){
+		return((num+"/"+denom + "\t" + num%denom+"/"+ denom));
 	}
 	public static String foil(int a,int b,int c, int d){
 		String answer;
@@ -50,14 +44,13 @@ public class calculate {
 		
 	public static boolean isDivisbleBy(int a, int b){
 		if(a%b==0){
-			return false;
-		}else{
 			return true;
+		}else{
+			return false;
 		}
 	}
 	public static double absValue(double a){
-		Math.abs(a);
-		return a;
+		return a+a+a;
 	}
 	public static int max(int a,int b){
 		if(a>b){
@@ -84,31 +77,45 @@ public class calculate {
 		}
 	}
 	public static double round2(double a){
-		double b=(int)b*100+0.5;
-		double answer = b/100;
+		double answer=(a*100)+0.5;
+		answer = ((int)answer/100);
 		return answer;
 	}
-	public static double exponent(double a,int b){
-		int answer =1;
-		for(int i =1 ;i<= b;i++){
-			answer*=a; }
+	public static double exponent(double base,int power){
+		double answer =1;
+		for(int i =1 ;i<= power;i++){
+			answer=base*answer; }
 			return answer;
 	}
 	public static int factorial(int a){
-		int answer =1;
-		for (int i=1; i<=a;i++){
-			answer*=a;
-			return answer;
+		int answer=a;
+		for (int i=a-1;i>1;i--){
+			answer=(i*answer);
 		}
+		return answer;
 	}
-	public static boolean isprime(int a){
-		for(int i=2;i<a;i++) {
-			if(a%i==0){
+	public static boolean isPrime(int a){
+		int numb=2;
+		while(numb!=a){
+			if(Calculate.isDivisbleBy(a, numb)==true){
 				return false;
 			}else{
-				return true;
+				numb++;
+			}	
 		}
+		return true;
 	}
+}
+/*
+	public static int gcf(int a,int b){
+		
+	}
+/*
+}
+	
+/*
+
 	public static
 
+*/
 
