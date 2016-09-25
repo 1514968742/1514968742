@@ -105,17 +105,31 @@ public class Calculate {
 		}
 		return true;
 	}
-}
-/*
+
 	public static int gcf(int a,int b){
-		
+		int c=Calculate.min(a, b);
+		int d=Calculate.max(a, b);
+		if(c==0){
+			return d;
+		}
+		while(c!=0){
+			c=d;
+			c=d%c;
+		}
+		return d;
 	}
-/*
+	public static double sqrt(double a){
+		double x=0;
+		if(a<0){
+			throw new IllegalArgumentException("can't square");
+		}
+		while ((a-x*x)>0.01){
+			 x=x+0.001;
+		}
+			return x;
+	}
+
 }
 	
-/*
 
-	public static
-
-*/
 
